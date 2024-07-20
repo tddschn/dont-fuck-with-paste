@@ -7,6 +7,8 @@ Annoying login window that doesn't allow you to paste your 128-char long passwor
 
 https://github.com/user-attachments/assets/3bbf4ec0-981d-42ed-ae7b-f17d9c664d12
 
+Demo: using `dfwp` to deal with trading software's unpastable login text fields.
+
 - [dont-fuck-with-paste](#dont-fuck-with-paste)
   - [Installation](#installation)
     - [pipx](#pipx)
