@@ -17,6 +17,7 @@ Demo: using `dfwp` to deal with trading software's unpastable login text fields.
     - [On the Command Line](#on-the-command-line)
     - [Invoking `dfwp` without A Terminal](#invoking-dfwp-without-a-terminal)
   - [Develop](#develop)
+  - [Credits](#credits)
 
 ## Installation
 
@@ -67,3 +68,7 @@ $ git clone https://github.com/tddschn/dont-fuck-with-paste.git
 $ cd dont-fuck-with-paste
 $ poetry install
 ```
+
+## Credits
+
+The naming was inspired by a browser extension with a similar name.
