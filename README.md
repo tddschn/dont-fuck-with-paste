@@ -14,6 +14,8 @@ Demo: using `dfwp` to deal with trading software's unpastable login text fields.
     - [pipx](#pipx)
     - [pip](#pip)
   - [Usage](#usage)
+    - [On the Command Line](#on-the-command-line)
+    - [Invoking `dfwp` without A Terminal](#invoking-dfwp-without-a-terminal)
   - [Develop](#develop)
 
 ## Installation
@@ -36,6 +38,8 @@ $ pip install dont-fuck-with-paste
 
 ## Usage
 
+### On the Command Line
+
 Either `dfwp` or `dont-fuck-with-paste` works.
 
 ```plain
@@ -51,6 +55,10 @@ options:
   -S, --no-strip        Do not strip leading/trailing whitespace (default: False)
   -V, --version         show program's version number and exit
 ```
+
+### Invoking `dfwp` without A Terminal
+
+You can install the tool using `pipx install dont-fuck-with-paste` and use software like Alfred / Keyboard Maestro / Raycast to invoke the simulated pasting by running `dfwp` or `~/.local/bin/dfwp` with a keyboard shortcut or keyword.
 
 ## Develop
 
