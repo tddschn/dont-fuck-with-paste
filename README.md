@@ -34,6 +34,8 @@ $ pip install dont-fuck-with-paste
 
 ## Usage
 
+Either `dfwp` or `dont-fuck-with-paste` works.
+
 ```plain
 $ dfwp -h
 
