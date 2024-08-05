@@ -56,7 +56,10 @@ def main():
 
     if text:
         # pyautogui.write(text)
-        keyboard.write(text)
+        import time
+
+        time.sleep(0.1)
+        keyboard.write(text, delay=0.02, exact=True)
     else:
         print(
             "No text to paste. Please provide text with -t option or ensure clipboard is not empty."
