@@ -3,7 +3,7 @@
 Annoying login window that doesn't allow you to paste your 128-char long password?  
 `dfwp` to the rescue!
 
-`dfwp` uses `pyautogui.write()` to simulate pasting.
+`dfwp` uses `keyboard.write()` to simulate pasting.
 
 https://github.com/user-attachments/assets/3bbf4ec0-981d-42ed-ae7b-f17d9c664d12
 
@@ -48,7 +48,7 @@ $ dfwp -h
 
 usage: dfwp [-h] [-t TEXT] [-S] [-V]
 
-Uses pyautogui.write() to simulate pasting
+Uses keyboard.write() to simulate pasting
 
 options:
   -h, --help            show this help message and exit

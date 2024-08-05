@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "dont-fuck-with-paste"
 version = "0.1.4"
-description = "Uses pyautogui.write() to simulate pasting"
+description = "Uses keyboard.write() to simulate pasting"
 authors = ["Teddy Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/tddschn/dont-fuck-with-paste"
 repository = "https://github.com/tddschn/dont-fuck-with-paste"
 classifiers = ["Topic :: Utilities"]
-keywords = ["pyautogui", "utility", "pasting", "clipboard", "gui", "automation"]
+keywords = ["keyboard", "utility", "pasting", "clipboard", "gui", "automation"]
 
 [tool.poetry.scripts]
 dfwp = "dont_fuck_with_paste.cli:main"
@@ -19,7 +19,8 @@ dont-fuck-with-paste = "dont_fuck_with_paste.cli:main"
 
 [tool.poetry.dependencies]
 python = ">=3.10, <4.0"
-PyAutoGUI = "^0.9.54"
+# PyAutoGUI = "^0.9.54"
+keyboard = "^0.13.5"
 pyperclip = "^1.9.0"
 
 

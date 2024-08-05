@@ -2,7 +2,7 @@
 """
 Author : Xinyuan Chen <45612704+tddschn@users.noreply.github.com>
 Date   : 2024-07-20
-Purpose: Use pyautogui.write() to simulate pasting
+Purpose: Use keyboard.write() to simulate pasting
 """
 
 import argparse
@@ -14,7 +14,7 @@ def get_args():
     """Get command-line arguments"""
 
     parser = argparse.ArgumentParser(
-        description="Uses pyautogui.write() to simulate pasting",
+        description="Uses keyboard.write() to simulate pasting",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
 
@@ -46,7 +46,8 @@ def main():
     """Make a jazz noise here"""
 
     args = get_args()
-    import pyautogui
+    # import pyautogui
+    import keyboard
     import pyperclip
 
     text = args.text if args.text else pyperclip.paste()
@@ -54,7 +55,8 @@ def main():
         text = text.strip()
 
     if text:
-        pyautogui.write(text)
+        # pyautogui.write(text)
+        keyboard.write(text)
     else:
         print(
             "No text to paste. Please provide text with -t option or ensure clipboard is not empty."
