@@ -38,6 +38,13 @@ def get_args():
         action="version",
         version=f"%(prog)s {__version__}",
     )
+    parser.add_argument(
+        "-d",
+        "--delay",
+        help="Delay in second(s) between simulated keypresses",
+        default=0.02,
+        type=float,
+    )
 
     return parser.parse_args()
 
@@ -59,7 +66,7 @@ def main():
         import time
 
         time.sleep(0.1)
-        keyboard.write(text, delay=0.02, exact=True)
+        keyboard.write(text, delay=args.delay, exact=True)
     else:
         print(
             "No text to paste. Please provide text with -t option or ensure clipboard is not empty."
