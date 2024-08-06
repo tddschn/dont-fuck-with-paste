@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dont-fuck-with-paste"
-version = "0.1.6"
+version = "0.1.7"
 description = "Uses keyboard.write() to simulate pasting"
 authors = ["Teddy Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
 license = "MIT"
